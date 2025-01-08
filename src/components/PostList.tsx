@@ -9,12 +9,13 @@ type TabType = "all" | "my";
 
 export default function PostList({ hasNavigation = true }: PostListProps) {
 
-  const [activeTab, setActiveTab] = useState<TabType>("all");
+const [activeTab, setActiveTab] = useState<TabType>("all");
 
   return (
     <>
       {hasNavigation && (
         <div className="post__navigation">
+
           <div
             role="presentation"
             onClick={() => setActiveTab("all")}
